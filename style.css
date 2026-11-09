@@ -1,0 +1,131 @@
+:root {
+  --bg-dark: #0a0a10;
+  --surface: #12121c;
+  --border: #1e1e2e;
+  --primary: #7c4dff;
+  --secondary: #00e5ff;
+  --emerald: #00e676;
+  --amber: #ffd600;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 2.2rem 1.5rem;
+  text-align: center;
+}
+
+.logo-badge {
+  display: inline-block;
+  background: rgba(124, 77, 255, 0.12);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+h1 span {
+  color: var(--primary);
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+}
+
+.feature-card h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.privacy-banner {
+  background: rgba(0, 230, 118, 0.08);
+  border: 1px solid var(--emerald);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.privacy-banner h2 {
+  color: var(--emerald);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-banner p {
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
